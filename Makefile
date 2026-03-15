@@ -4,7 +4,7 @@ PROJECTS:=bootloader demo_composite_hid demo_hidapi demo_gamepad demo_pikokey_hi
 all : build
 
 build :
-	for dir in $(PROJECTS); do $(MAKE) -C $$dir build || exit 1; done
+	for dir in $(PROJECTS); do $(MAKE) -C $$dir build; done
 
 clean : $(PROJECTS)
 	for dir in $(PROJECTS); do $(MAKE) -C $$dir clean; done
