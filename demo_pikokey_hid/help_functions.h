@@ -310,7 +310,7 @@ void systick_init(void)
 	SysTick->CTLR = 0;
 	
 	/* enable the SysTick IRQ */
-	NVIC_EnableIRQ(SysTick_IRQn);
+	NVIC_EnableIRQ(SysTicK_IRQn);
 	
 	/* Set the tick interval to 1ms for normal op */
 	SysTick->CMP = (FUNCONF_SYSTEM_CORE_CLOCK/1000)-1;
